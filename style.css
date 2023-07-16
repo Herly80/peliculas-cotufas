@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .5s;
+}
+
+#canvas {
+  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.encabezado {
+    position: absolute;
+    margin-top: 1%;
+    left: 5%;
+    width: auto;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    text-shadow:
+        0px 0px 20px rgb(156, 216, 156),
+        0px 0px 20px rgba(0, 255, 0, 1),
+        0px 0px 20px rgb(149, 214, 149);
+    font: bold 1.2em Comic Sans MS, sans-serif;
+}
+
+
+.carrusel {
+    position: absolute;
+    width: 180%;
+    height: 50%;
+    margin-top: 10%;
+    display: flex;
+    translate: -22.3%;
+}
+
+.carrusel div {
+    margin: 1%;
+    width: 20%;
+    height: 90%;
+}
+
+.carrusel div:nth-child(5) {
+    cursor: pointer;
+    scale: 1.1;
+    transition: 2s;
+
+}
+#portada5{
+    transition: 2s;
+}
+
+.carrusel div:not(div:nth-child(5)) {
+    opacity: .4;
+}
+
+.movies img {
+    width: 95%;
+    height: 95%;
+    margin-top: 3%;
+    margin-left: 2.5%;
+    border-radius: 10px;
+    transition: 2s;
+}
+
+.nombreBar {
+    background: linear-gradient(to top, #80e2a7, #51e28d, #35f17a, #80e2c2, #ffffff);
+
+    width: 30%;
+    height: 5%;
+    position: absolute;
+    top: 82%;
+    left: 34%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-top: 10px solid;
+    border-bottom: 2px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: rgba(0, 255, 255, 0.5);
+    box-shadow: 2px 2px 0px 0px rgba(255, 255, 255, 0.7),
+        -2px -2px 0px 0px rgba(255, 255, 255, 0.7);
+}
+
+#nombreBar {
+    color: #221E1F;
+    font: bold 2em Verdana, sans-serif;
+    text-align: center;
+    margin-top: 2;
+}
+
+.indexMovie {
+    position: absolute;
+    color: white;
+    top: 92%;
+    left: 46%;
+    font: bold 24px Verdana, sans-serif;
+}
+
+.fAnterior {
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 96%;
+    top: 40%;
+    margin-right: 0%;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-right: 50px solid rgba(255, 255, 255, 0.336);
+
+    z-index: 1;
+    cursor: pointer;
+    transition: 1S;
+
+}
+
+.fSiguiente {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 96%;
+    top: 40%;
+    margin-left: 0%;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 50px solid rgba(255, 255, 255, 0.336);
+    cursor: pointer;
+    transition: 1S;
+    z-index: 1;
+
+
+
+}
+
+.fAnterior:hover {
+    border-right: 50px solid rgb(194, 176, 194);
+}
+
+.fSiguiente:hover {
+    border-left: 50px solid rgb(194, 176, 194);
+}
+
+
+
+
+.ventanaVideo {
+    position: absolute;
+    background-color: rgb(54, 65, 61);
+    width: 60%;
+    height: 70%;
+    top: 10%;
+    left: 35%;
+    opacity: .5;
+    visibility: hidden;
+    border-radius: 10px;
+}
+
+.ventanaVideo p {
+    text-align: center;
+    font: bold 2em Verdana, sans-serif;
+    color: white;
+}
+
+.videoContenedor {
+    position: absolute;
+    width: 60%;
+    height: 70%;
+    top: 10%;
+    left: 35%;
+    box-shadow: 2px 2px 0px 0px rgba(255, 255, 255, 0.7),
+        -2px -2px 0px 0px rgba(255, 255, 255, 0.7);
+    visibility: hidden;
+    border-radius: 10px;
+}
+
+.videoContenedor #nombreVideo {
+    text-align: center;
+    font: bold 2em Verdana, sans-serif;
+    color: white;
+}
+.videoContenedor .sinopsis{
+    font: bold 2em Verdana, sans-serif;
+    color: #FFFBD6 ;
+    text-align: center;
+}
+.videoContenedor #descripcionVideo {
+    text-align: justify;
+    font: bold 1em Verdana, sans-serif;
+    color: white;
+    margin: 0 10%;
+}
+
+.videoContenedor .ezIzquierdo1 {
+    position: absolute;
+    top: 0;
+    left: 1%;
+
+}
+
+.videoContenedor .ezIzquierdo2 {
+    position: absolute;
+    top: 0%;
+    left: 96%;
+
+}
+
+.videoContenedor .ezDerecho1 {
+    position: absolute;
+    top: 92%;
+    left: 1%;
+
+}
+
+.videoContenedor .ezDerecho2 {
+    position: absolute;
+    top: 92%;
+    left: 96%;
+
+}
+.videoContenedor .ezIzquierdo1,.ezIzquierdo2,.ezDerecho1,.ezDerecho2{
+    font-size: 2em;
+}
+.videoContenedor video {
+    width: 70%;
+    margin-top: 5%;
+    margin-left: 15%;
+
+}
