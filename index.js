@@ -23,8 +23,8 @@ var portadasCarrusel = [{
 }, {
     id: "3",
     nombre: "La vida de Pi",
-    urlimg: "./img/vidaPi.webp",
-    urlFondo: "./img/vidapifondo.webp",
+    urlimg: "./img/vidaPi.jpg",
+    urlFondo: "./img/vidaPiFondo.jpg",
     urlVideo: "./trailers/lavidadepi.mp4",       
         sinopsis: "Supongo que al final, toda la vida," +
         " se convierte en un acto de dejar ir, pero lo que " +
